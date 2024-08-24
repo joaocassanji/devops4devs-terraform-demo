@@ -59,6 +59,10 @@ In this project, several parameters are defined as variables to be configured. T
 
 - **`virtual_machine`**: A list of objects defining the properties of the Virtual Machines. Each object includes the VM name, number of instances, and the name of the subnet where the VM will be deployed.
 
+- **`vm_username`**: The username to access the virtual machine, you can load this value using the environment variable `TF_VAR_vm_username`.
+
+- **`vm_password`**: The password to access the virtual machines, you can load this value using the environment variable `TF_VAR_vm_password`.
+
 - **`database`**: An object that contains properties for the database server, including the server name and database name.
 
 For a real-world scenario, it is advisable to externalize these parameters using a `.tfvars` file to allow more flexible configuration and management. This project keeps essential parameters configurable to streamline setup and focus on core functionality.
